@@ -1,0 +1,338 @@
+
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Palak Gobi Sabzi",
+      "image": "palak-gobi-sabzi.jpg",
+      
+      "description": "A simple and healthy dish of cauliflower and spinach cooked with tomatoes, ginger, and spices.",
+      "ingredients": [
+        "1 medium cauliflower, cut into florets",
+        "2 cups spinach leaves, chopped",
+        "1 large tomato, chopped",
+        "1-inch ginger, finely chopped",
+        "2 green chillies, slit",
+        "1/2 teaspoon turmeric powder",
+        "1 teaspoon cumin seeds",
+        "1 teaspoon coriander powder",
+        "1/2 teaspoon red chilli powder",
+        "Salt to taste",
+        "2 tablespoons oil",
+        "Fresh coriander leaves for garnish"
+      ],
+      "instructions": [
+        "Heat oil in a pan and add cumin seeds.",
+        "Add chopped ginger and green chillies. Saute for a minute.",
+        "Add chopped tomatoes and cook until they turn soft.",
+        "Add turmeric powder, coriander powder, red chilli powder, and salt. Mix well.",
+        "Add cauliflower florets and spinach leaves. Mix everything together.",
+        "Cover and cook until the cauliflower is tender and cooked.",
+        "Garnish with fresh coriander leaves and serve hot."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Aval Upma",
+      "image": "aval-upma.jpg",
+      "description": "A quick and easy breakfast or snack made with flattened rice, onions, green chillies, curry leaves, peanuts, and lemon juice.",
+      "ingredients": [
+        "2 cups flattened rice (aval/poha)",
+        "1 large onion, finely chopped",
+        "2 green chillies, chopped",
+        "10-12 curry leaves",
+        "1/4 cup roasted peanuts",
+        "1 tablespoon lemon juice",
+        "2 tablespoons oil",
+        "1 teaspoon mustard seeds",
+        "1 teaspoon cumin seeds",
+        "1/2 teaspoon turmeric powder",
+        "Salt to taste",
+        "Fresh coriander leaves for garnish"
+      ],
+      "instructions": [
+        "Wash the flattened rice in water and drain well.",
+        "Heat oil in a pan and add mustard seeds and cumin seeds. Let them splutter.",
+        "Add chopped onions, green chillies, and curry leaves. Saute until onions turn translucent.",
+        "Add turmeric powder and salt. Mix well.",
+        "Add the washed flattened rice and mix everything together.",
+        "Cook for a few minutes until the flattened rice is heated through.",
+        "Add roasted peanuts and lemon juice. Mix well.",
+        "Garnish with fresh coriander leaves and serve hot."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Chana Gassi",
+      "image": "chana-gassi.jpg",
+      "description": "A Mangalorean style curry of chickpeas cooked in a coconut-based gravy with tamarind and spices.",
+      "ingredients": [
+        "1 cup dried chickpeas, soaked overnight",
+        "1 large onion, finely chopped",
+        "2 tomatoes, finely chopped",
+        "1 teaspoon ginger paste",
+        "1 teaspoon garlic paste",
+        "1 teaspoon cumin seeds",
+        "1 teaspoon garam masala",
+        "1/2 teaspoon turmeric powder",
+        "1 teaspoon red chili powder",
+        "1 teaspoon ground coriander",
+        "1 teaspoon ground cumin",
+        "1/4 cup chopped coriander leaves",
+        "2 tablespoons ghee",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "Boil the soaked chickpeas until they are tender.",
+        "In a large pan, heat ghee and add cumin seeds. Let them splutter.",
+        "Add chopped onions and cook until they become golden brown.",
+        "Add ginger and garlic paste and cook for a minute until the raw smell disappears.",
+        "Add chopped tomatoes and cook until they become soft and oil starts to separate.",
+        "Add turmeric powder, red chili powder, ground coriander, and ground cumin. Mix well.",
+        "Add the boiled chickpeas and stir to coat them with the spices.",
+        "Add garam masala and salt. Simmer for 10 minutes until the flavors meld.",
+        "Garnish with chopped coriander leaves and serve hot with bhature or rice."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dali Thoy",
+      "image": "dali-thoy.jpg",
+      "description": "A Karwar style dal curry made with toor dal, drumsticks, curry leaves, and mustard seeds.",
+      "ingredients": [
+        "1 cup toor dal",
+        "2 cups water",
+        "1 drumstick, cut into pieces",
+        "1 onion, finely chopped",
+        "2 green chillies, slit",
+        "1 teaspoon mustard seeds",
+        "1 teaspoon cumin seeds",
+        "10-12 curry leaves",
+        "A pinch of asafoetida (hing)",
+        "1/2 teaspoon turmeric powder",
+        "1 tablespoon oil",
+        "Salt to taste",
+        "Fresh coriander leaves for garnish"
+      ],
+      "instructions": [
+        "Wash the toor dal and cook it with water in a pressure cooker until soft.",
+        "In a pan, heat oil and add mustard seeds and cumin seeds. Let them splutter.",
+        "Add asafoetida, curry leaves, chopped onions, and green chillies. Saute until onions turn translucent.",
+        "Add drumstick pieces and cook for a few minutes.",
+        "Add turmeric powder and salt. Mix well.",
+        "Add the cooked toor dal and bring it to a boil.",
+        "Simmer for a few minutes until the flavors meld.",
+        "Garnish with fresh coriander leaves and serve hot with rice."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kuska Biryani",
+      "image": "kuska-biryani.jpg",
+      "description": "A flavorful rice dish cooked with aromatic spices, ghee, and vegetable stock.",
+      "ingredients": [
+        "2 cups Basmati rice",
+        "2 large onions, thinly sliced",
+        "2 tomatoes, finely chopped",
+        "1/2 cup yogurt",
+        "1/4 cup mint leaves",
+        "1/4 cup coriander leaves",
+        "1/4 cup fried onions",
+        "1/4 cup ghee",
+        "1/4 cup vegetable oil",
+        "1 tablespoon ginger-garlic paste",
+        "1 teaspoon red chili powder",
+        "1/2 teaspoon turmeric powder",
+        "1 teaspoon biryani masala",
+        "1 teaspoon garam masala",
+        "A pinch of saffron strands (soaked in milk)",
+        "Salt to taste",
+        "Cashews and raisins for garnish"
+      ],
+      "instructions": [
+        "Wash and soak Basmati rice in water for 30 minutes.",
+        "In a large pot, heat ghee and vegetable oil.",
+        "Add sliced onions and cook until they turn golden brown.",
+        "Add ginger-garlic paste and saute for a minute.",
+        "Add chopped tomatoes and cook until they become soft.",
+        "Add red chili powder, turmeric powder, biryani masala, and garam masala. Mix well.",
+        "Add yogurt, mint leaves, coriander leaves, fried onions, saffron milk, and salt. Mix everything together.",
+        "Drain the soaked rice and add it to the pot. Mix gently.",
+        "Add vegetable stock (double the amount of rice) and bring it to a boil.",
+        "Cover the pot with a lid and simmer until the rice is cooked and the water is absorbed.",
+        "Garnish with cashews and raisins.",
+        "Serve the aromatic Kuska Biryani with raita or a side dish of your choice."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Paneer Bhatura",
+      "image": "paneer-bhatura.jpg",
+      "description": "A soft and fluffy deep-fried bread served with a spicy paneer curry.",
+      "ingredients": [
+        "For Bhatura:",
+        "2 cups all-purpose flour",
+        "1/2 teaspoon baking powder",
+        "1/4 teaspoon baking soda",
+        "1/2 cup yogurt",
+        "1 tablespoon oil",
+        "Water as needed",
+        "Salt to taste",
+        "Oil for deep frying",
+        "For Paneer Curry:",
+        "200g paneer, cubed",
+        "2 large onions, finely chopped",
+        "2 tomatoes, pureed",
+        "1 tablespoon ginger-garlic paste",
+        "2 green chillies, slit",
+        "1 teaspoon cumin seeds",
+        "1 teaspoon coriander powder",
+        "1/2 teaspoon turmeric powder",
+        "1/2 teaspoon red chili powder",
+        "1/4 cup fresh cream",
+        "2 tablespoons oil",
+        "Salt to taste",
+        "Fresh coriander leaves for garnish"
+      ],
+      "instructions": [
+        "For Bhatura:",
+        "In a mixing bowl, combine all-purpose flour, baking powder, baking soda, and salt.",
+        "Add yogurt and oil. Mix well and knead into a soft dough, adding water as needed.",
+        "Cover the dough and let it rest for 1-2 hours.",
+        "Divide the dough into small balls. Roll out each ball into a circular shape.",
+        "Heat oil in a deep pan for frying.",
+        "Fry the rolled Bhatura in hot oil until they puff up and turn golden brown.",
+        "For Paneer Curry:",
+        "In a pan, heat oil and add cumin seeds.",
+        "Add chopped onions and saute until they become translucent.",
+        "Add ginger-garlic paste and green chillies. Cook for a minute.",
+        "Add tomato puree and cook until the oil starts to separate.",
+        "Add coriander powder, turmeric powder, red chili powder, and salt. Mix well.",
+        "Add paneer cubes and stir gently to coat them with the spices.",
+        "Add fresh cream and simmer for a few minutes until the curry thickens.",
+        "Garnish with fresh coriander leaves.",
+        "Serve the hot and delicious Paneer Bhatura with the spicy paneer curry."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Payyoli Chicken Fry",
+      "image": "payyoli-chicken-fry.jpg",
+      "description": "A Kerala style chicken fry marinated with ginger, garlic, turmeric, red chilli powder, and lemon juice and fried till crisp.",
+      "ingredients": [
+        "500g chicken pieces, cleaned and washed",
+        "1 tablespoon ginger-garlic paste",
+        "1 teaspoon turmeric powder",
+        "1 teaspoon red chilli powder",
+        "1 teaspoon black pepper powder",
+        "1 tablespoon lemon juice",
+        "1/4 cup rice flour",
+        "1/4 cup all-purpose flour",
+        "Curry leaves for garnish",
+        "Salt to taste",
+        "Oil for frying"
+      ],
+      "instructions": [
+        "In a bowl, mix chicken pieces with ginger-garlic paste, turmeric powder, red chilli powder, black pepper powder, lemon juice, and salt.",
+        "Marinate the chicken for at least 30 minutes.",
+        "In a separate bowl, mix rice flour and all-purpose flour.",
+        "Coat the marinated chicken pieces with the flour mixture.",
+        "Heat oil in a deep pan for frying.",
+        "Fry the coated chicken pieces until they turn golden brown and crispy.",
+        "Garnish with curry leaves.",
+        "Serve the flavorful Payyoli Chicken Fry as a delicious appetizer or side dish."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Hyderabadi Dum Chai",
+      "image": "hyderabadi-dum-chai.jpg",
+      "description": "A rich and creamy tea brewed with milk, water, tea leaves, cardamom, cloves, and saffron.",
+      "ingredients": [
+        "2 cups water",
+        "2 cups milk",
+        "2 tablespoons loose tea leaves",
+        "4-5 green cardamom pods, crushed",
+        "4-5 cloves",
+        "A few saffron strands",
+        "Sugar to taste"
+      ],
+      "instructions": [
+        "In a saucepan, add water, crushed cardamom pods, and cloves.",
+        "Bring the water to a boil and add tea leaves.",
+        "Simmer for a few minutes until the tea is brewed.",
+        "Add milk and saffron strands.",
+        "Let the tea simmer on low heat for a few more minutes.",
+        "Add sugar to taste and stir well.",
+        "Strain the chai into cups and serve hot with your favorite snacks or biscuits."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Aloo Kulcha",
+      "image": "aloo-kulcha.jpg",
+      "description": "A stuffed flatbread filled with a spicy potato mixture and cooked on a tawa or griddle.",
+      "ingredients": [
+        "For the dough:",
+        "2 cups all-purpose flour",
+        "1/2 teaspoon baking powder",
+        "1/2 teaspoon baking soda",
+        "1/2 cup yogurt",
+        "1 tablespoon oil",
+        "Water as needed",
+        "Salt to taste",
+        "Oil for greasing",
+        "For the stuffing:",
+        "2 large potatoes, boiled and mashed",
+        "1 small onion, finely chopped",
+        "2 green chillies, finely chopped",
+        "1 teaspoon ginger-garlic paste",
+        "1/2 teaspoon cumin seeds",
+        "1/2 teaspoon red chilli powder",
+        "1/2 teaspoon garam masala",
+        "1 tablespoon chopped coriander leaves",
+        "Salt to taste",
+        "Ghee or butter for cooking"
+      ],
+      "instructions": [
+        "For the dough:",
+        "In a mixing bowl, combine all-purpose flour, baking powder, baking soda, and salt.",
+        "Add yogurt and oil. Mix well and knead into a soft dough, adding water as needed.",
+        "Cover the dough and let it rest for 1-2 hours.",
+        "For the stuffing:",
+        "In a pan, heat oil and add cumin seeds.",
+        "Add chopped onions and saute until they become translucent.",
+        "Add ginger-garlic paste and green chillies. Cook for a minute.",
+        "Add mashed potatoes, red chilli powder, garam masala, and salt. Mix well.",
+        "Add chopped coriander leaves and mix everything together.",
+        "Divide the dough into small balls. Roll out each ball into a small circle.",
+        "Place a spoonful of the potato stuffing in the center and seal the edges.",
+        "Flatten the stuffed ball and roll it into a kulcha.",
+        "Heat a tawa or griddle and cook the kulcha on both sides with ghee or butter until golden brown.",
+        "Serve the hot and delicious Aloo Kulcha with chole or your favorite curry."
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Gulkand Ice Cream",
+      "image": "gulkand-ice-cream.jpg",
+      "description": "A refreshing and fragrant ice cream made with rose petals, condensed milk, and cream.",
+      "ingredients": [
+        "2 cups heavy cream",
+        "1 cup condensed milk",
+        "1/4 cup rose syrup or gulkand (rose petal jam)",
+        "1/4 cup chopped rose petals (cleaned and pesticide-free)",
+        "1/4 teaspoon rose essence",
+        "A few drops of pink food coloring (optional)"
+      ],
+      "instructions": [
+        "In a mixing bowl, whip the heavy cream until stiff peaks form.",
+        "Add condensed milk, rose syrup, rose essence, and pink food coloring (if using). Mix gently.",
+        "Fold in the chopped rose petals.",
+        "Transfer the mixture to a container and cover it with a lid.",
+        "Freeze the ice cream mixture for at least 6-8 hours or until set.",
+        "Serve the aromatic Gulkand Ice Cream in bowls or cones and enjoy!"
+      ]
+    }
+  ]
+}

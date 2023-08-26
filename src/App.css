@@ -1,0 +1,285 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.app-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.recipe-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.recipe-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.recipe-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.recipe-details {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.recipe-details img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.recipe-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-details h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.recipe-details ul,
+.recipe-details ol {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.recipe-details li {
+  margin-bottom: 0.5rem;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .app-main {
+    flex-direction: column;
+  }
+  
+  .recipe-details {
+    margin-top: 2rem;
+  }
+}
+
+
+/* Header styles */
+ .app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  max-width: 40px;
+  height: auto;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links-container a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav-links-container a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.search-icon {
+  font-size: 1.2rem;
+}
+
+
+  /* App.css */
+ 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-top: auto;  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+
+.instagram {
+  color: #ff66cc;  
+}
+
+.facebook {
+  color: #3b5998;  
+}
+
+.twitter {
+  color: #1da1f2;  
+}
+
+.whatsapp {
+  color: #25d366;  
+}
+
+p {
+  margin: 0;
+}
+ 
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+  width: 300px; /* Adjust the width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.login-form{
+  width: 300px; /* Adjust the width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
