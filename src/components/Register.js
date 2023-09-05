@@ -1,109 +1,177 @@
  import React, { useState } from "react";
- import { Form, Button } from "react-bootstrap";
- import { Link, useNavigate } from "react-router-dom"; // Use useNavigate
- import { auth, firestore } from "../firebaseConfig";
+ import { useNavigate } from "react-router-dom";
+ import { Form, Button, Alert } from "react-bootstrap";
 
-  const Register = () => {
-    const navigate = useNavigate(); // Initialize the useNavigate hook
-    const [username, setUsername] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [showError, setShowError] = useState(false);
+ const Register = () => {
+   const navigate = useNavigate();
+   const [errorMessage, setErrorMessage] = useState("");
+   const [user, setUser] = useState({
+     username: "",
+     email: "",
+     password: "",
+     confirmPassword: "",
+     phone: "",
+     address: "",
+   });
+   const [profileImage, setProfileImage] = useState(null);
 
-    const handleUsernameChange = (e) => {
-      setUsername(e.target.value);
-    };
+   const handleInputChange = (event) => {
+     const { name, value } = event.target;
+     setUser({ ...user, [name]: value });
+   };
 
-    const handleEmailChange = (e) => {
-      setEmail(e.target.value);
-    };
+   const handleImageChange = (event) => {
+     const imageFile = event.target.files[0];
+     setProfileImage(imageFile);
+   };
 
-    const handlePasswordChange = (e) => {
-      setPassword(e.target.value);
-    };
+   const handleSignUp = async (event) => {
+     event.preventDefault();
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
+     const { username, email, password, confirmPassword, phone, address } =
+       user;
 
-      if (!username || !email || !password) {
-        setShowError(true);
-        return;
-      }
+     if (
+       !username ||
+       !email ||
+       !password ||
+       !confirmPassword ||
+       !phone ||
+       !address
+     ) {
+       setErrorMessage("Please fill in all the required fields.");
+       return;
+     }
 
-      setShowError(false);
+     if (password !== confirmPassword) {
+       setErrorMessage("Passwords do not match.");
+       return;
+     }
 
-      try {
-        // Register logic using Firebase Authentication
-        await auth.createUserWithEmailAndPassword(email, password);
+     if (!profileImage) {
+       setErrorMessage("Please select a profile image.");
+       return;
+     }
 
-        // Optional: Update user profile with username
-        const user = auth.currentUser;
-        if (user) {
-          await user.updateProfile({
-            displayName: username,
-          });
+     const formData = new FormData();
+     formData.append("username", username);
+     formData.append("email", email);
+     formData.append("password", password);
+     formData.append("phone", phone);
+     formData.append("address", address);
+     formData.append("profileImage", profileImage);
 
-          // Save user details to Firestore
-          await firestore.collection("users").doc(user.uid).set({
-            username: username,
-            email: email,
-          });
+     // You can use the formData to send the registration data to your backend API.
+     // Example: await fetch("/api/register", { method: "POST", body: formData });
 
-          // Show alert and handle redirection
-          alert("Registration successful. Click OK to go to the login page.");
-          navigate("/login"); // Redirect to the login page using navigate
-        }
-      } catch (error) {
-        console.error("Error creating user:", error);
-        // Handle error, show error message, etc.
-      }
-    };
+     // Once the registration is successful, navigate to the desired page.
+     alert("Account created successfully!");
+     navigate("/signin");
+   };
 
-    return (
-      <div className="centered-container">
-        <div className="register-form">
-          <h2>Register</h2>
-          <p>
-            Already have an account? <Link to="/login">Login here</Link>
-          </p>
-          {showError && (
-            <div className="error-message">
-              Please fill in all required fields.
-            </div>
-          )}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="username">
-              <Form.Label>Username:</Form.Label>
-              <Form.Control
-                type="text"
-                value={username}
-                onChange={handleUsernameChange}
-              />
-            </Form.Group>
-
-            <Form.Group controlId="email">
-              <Form.Label>Email:</Form.Label>
-              <Form.Control
-                type="email"
-                value={email}
-                onChange={handleEmailChange}
-              />
-            </Form.Group>
-
-            <Form.Group controlId="password">
-              <Form.Label>Password:</Form.Label>
-              <Form.Control
-                type="password"
-                value={password}
-                onChange={handlePasswordChange}
-              />
-            </Form.Group>
-
-            <Button type="submit">Register</Button>
-          </Form>
-        </div>
-      </div>
-    );
-  };
+   return (
+     <div
+       style={{
+         maxWidth: "400px",
+         margin: "0 auto",
+         padding: "20px",
+         border: "1px solid #ccc",
+         borderRadius: "8px",
+         backgroundColor: "#fff",
+         boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+       }}
+     >
+       <h2 style={{ fontSize: "24px", marginBottom: "20px" }}>
+         Create an Account
+       </h2>
+       <Form onSubmit={handleSignUp}>
+         <Form.Group controlId="username">
+           <Form.Label style={{ fontWeight: "bold" }}>Username</Form.Label>
+           <Form.Control
+             type="text"
+             name="username"
+             placeholder="Username"
+             onChange={handleInputChange}
+           />
+         </Form.Group>
+         <Form.Group controlId="email">
+           <Form.Label style={{ fontWeight: "bold" }}>Email ID</Form.Label>
+           <Form.Control
+             type="email"
+             name="email"
+             placeholder="Email ID"
+             onChange={handleInputChange}
+           />
+         </Form.Group>
+         <Form.Group controlId="password">
+           <Form.Label style={{ fontWeight: "bold" }}>Password</Form.Label>
+           <Form.Control
+             type="password"
+             name="password"
+             placeholder="Password"
+             onChange={handleInputChange}
+           />
+         </Form.Group>
+         <Form.Group controlId="confirmPassword">
+           <Form.Label style={{ fontWeight: "bold" }}>
+             Confirm Password
+           </Form.Label>
+           <Form.Control
+             type="password"
+             name="confirmPassword"
+             placeholder="Confirm Password"
+             onChange={handleInputChange}
+           />
+         </Form.Group>
+         <Form.Group controlId="phone">
+           <Form.Label style={{ fontWeight: "bold" }}>Phone No</Form.Label>
+           <Form.Control
+             type="tel"
+             name="phone"
+             placeholder="Phone No"
+             onChange={handleInputChange}
+           />
+         </Form.Group>
+         <Form.Group controlId="address">
+           <Form.Label style={{ fontWeight: "bold" }}>Address</Form.Label>
+           <Form.Control
+             type="text"
+             name="address"
+             placeholder="Address"
+             onChange={handleInputChange}
+           />
+         </Form.Group>
+         <Form.Group controlId="profileImage">
+           <Form.Label style={{ fontWeight: "bold" }}>Profile Image</Form.Label>
+           <Form.Control
+             type="file"
+             accept="image/*"
+             onChange={handleImageChange}
+           />
+         </Form.Group>
+         <Button
+           style={{
+             backgroundColor: "#007bff",
+             color: "#fff",
+             border: "none",
+             borderRadius: "4px",
+             padding: "10px 20px",
+             fontSize: "16px",
+             cursor: "pointer",
+           }}
+           variant="primary"
+           type="submit"
+         >
+           Create Account
+         </Button>
+       </Form>
+       {errorMessage && (
+         <Alert style={{ marginTop: "10px" }} variant="danger">
+           {errorMessage}
+         </Alert>
+       )}
+     </div>
+   );
+ };
 
  export default Register;
